@@ -1,0 +1,42 @@
+<UserControl x:Class="KickBlastStudentUI.Views.DashboardView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Background="Transparent">
+    <StackPanel>
+        <Grid Margin="0,0,0,16">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Style="{StaticResource CardStyle}" Margin="0,0,10,0">
+                <StackPanel>
+                    <TextBlock Text="Athletes" FontWeight="SemiBold"/>
+                    <TextBlock x:Name="AthleteCountText" FontSize="36" Margin="0,10,0,0" Foreground="#2563EB"/>
+                </StackPanel>
+            </Border>
+
+            <Border Grid.Column="1" Style="{StaticResource CardStyle}" Margin="10,0">
+                <StackPanel>
+                    <TextBlock Text="Calculations" FontWeight="SemiBold"/>
+                    <TextBlock x:Name="CalculationCountText" FontSize="36" Margin="0,10,0,0" Foreground="#2563EB"/>
+                </StackPanel>
+            </Border>
+
+            <Border Grid.Column="2" Style="{StaticResource CardStyle}" Margin="10,0,0,0">
+                <StackPanel>
+                    <TextBlock Text="Plans" FontWeight="SemiBold"/>
+                    <TextBlock Text="3" FontSize="36" Margin="0,10,0,0" Foreground="#2563EB"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+
+        <Border Style="{StaticResource CardStyle}">
+            <StackPanel>
+                <TextBlock Text="Last Updated" FontWeight="SemiBold"/>
+                <TextBlock x:Name="UpdatedText" Margin="0,8,0,0"/>
+            </StackPanel>
+        </Border>
+    </StackPanel>
+</UserControl>
